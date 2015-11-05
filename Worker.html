@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><link href="Worker_files/css.css" rel="stylesheet" type="text/css"><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}</style><style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style type="text/css">.gm-style{font-family:Roboto,Arial,sans-serif;font-size:11px;font-weight:400;text-decoration:none}.gm-style img{max-width:none}</style>
+	<meta charset="utf-8">
+    <title>Worker</title>
+    <meta name="description" content="Here goes description">
+    <meta name="author" content="author name">
+    <link rel="shortcut icon" href="http://teslathemes.com/demo/html/worker/img/favicon.png" type="image/x-icon">
+
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="Worker_files/font-awesome.css">
+    <link rel="stylesheet" href="Worker_files/owl-carousel.css">
+    <link rel="stylesheet" href="Worker_files/bootstrap.css">
+    <link rel="stylesheet" href="Worker_files/lightbox.css">
+    <link rel="stylesheet" href="Worker_files/animate.css">
+    <link rel="stylesheet" href="Worker_files/icomoon.css">
+    <link rel="stylesheet" href="Worker_files/screen.css">
+<script style="" src="Worker_files/common.js" charset="UTF-8" type="text/javascript"></script><script src="Worker_files/map.js" charset="UTF-8" type="text/javascript"></script><script src="Worker_files/util.js" charset="UTF-8" type="text/javascript"></script><script src="Worker_files/marker.js" charset="UTF-8" type="text/javascript"></script><script src="Worker_files/onion.js" charset="UTF-8" type="text/javascript"></script><script src="Worker_files/ViewportInfoService.js" charset="UTF-8" type="text/javascript"></script><script src="Worker_files/stats.js" charset="UTF-8" type="text/javascript"></script><script src="Worker_files/controls.js" charset="UTF-8" type="text/javascript"></script><script src="Worker_files/vt.js" charset="UTF-8" type="text/javascript"></script><script src="Worker_files/AuthenticationService.js" charset="UTF-8" type="text/javascript"></script><script src="Worker_files/QuotaService.js" charset="UTF-8" type="text/javascript"></script></head>
+<body class="domready" data-smooth-scroll="on">
+	<!-- Project Popup -->
+	<div class="project-popup">
+		<div class="project-wrapper">
+			<div class="container">
+				<!-- Close Icon -->
+				<div class="close-button-wrapper">
+					<i class="close-project icon-cross"></i>
+				</div>
+
+				<!-- Project Cover -->
+				<div class="project-cover">
+					<img src="Worker_files/project-cover.jpg" alt="project cover">
+				</div>
+
+				<!-- Project Body -->
+				<div class="project-body">
+					<!-- Project Header -->
+					<div class="project-header">
+						<div class="date">
+							<span>Apr 22</span>
+						</div>
+
+						<h3 class="project-title">Unique styled men shirts</h3>
+					</div>
+
+					<p>Curabitur eu efficitur orci. Etiam ac mauris nec nibh imperdiet 
+bibendum. Nulla nec mattis ex. Morbi euismod justo risus. Vestibulum 
+ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia 
+Curae; Sed viverra justo arcu, ut auctor eros volutpat vel. Proin 
+volutpat dignissim tempus. Duis vulputate non erat a finibus. Maecenas 
+id commodo sapien, vel molestie augue. Mauris scelerisque quis dui non 
+lacinia. Etiam non nisl accumsan, iaculis ipsum a, elementum urna. Donec
+ dui orci, dictum et ultrices et, ultrices eget ipsum.</p>
+					<p>Quisque ac mattis nisl, pulvinar auctor urna. Duis tempus metus 
+eleifend elit cursus commodo. Nunc dui mi, posuere vel ornare quis, 
+lobortis ut urna. Sed fringilla nulla non metus placerat porttitor. 
+Fusce semper ligula pulvinar ligula tempus placerat. Mauris interdum 
+justo massa, quis semper nulla lobortis a. Fusce ex augue, vestibulum 
+non diam sed, efficitur fringilla elit. Morbi ullamcorper nisi at 
+pulvinar condimentum. Donec mattis nisl a augue egestas ornare. Ut 
+maximus eleifend lectus, id congue augue efficitur non. Donec vestibulum
+ augue id porttitor hendrerit. Duis ac diam lorem. Etiam tempus tempor 
+ligula in ultricies. Praesent at nunc tortor.</p>
+					<p>Morbi semper malesuada felis. Praesent pulvinar tristique mi at 
+finibus. Ut tincidunt odio elit, ut scelerisque mi suscipit in. 
+Phasellus erat diam, efficitur at vestibulum at, malesuada quis nunc. 
+Phasellus nec ex elit. Duis et suscipit nulla. Donec pulvinar sem 
+tristique egestas lacinia. Ut sed eleifend arcu. Proin eget justo 
+vestibulum lacus placerat sollicitudin sit amet et diam.</p>
+
+					<blockquote class="custom-blockquote-2">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Suspendisse quis nulla eget diam aliquet cursus. Class aptent taciti 
+sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+Proin eget neque sagittis, ultricies ipsum vel, maximus risus. Donec 
+posuere sed lorem non egestas. Vestibulum varius ipsum non sem 
+pellentesque faucibus. Etiam egestas quis arcu quis aliquam. Quisque 
+mattis lacus et sapien.</p>
+
+						<div class="author">
+							<p>Joe Doe <span>designer</span></p>
+						</div>
+					</blockquote>
+
+					<!-- Share Block -->
+					<div class="share-block">
+						<p>Share</p>
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							<li><a href="#"><i class="fa fa-vk"></i></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Project Pagination -->
+				<div class="project-pagination">
+					<ul>
+						<li>
+							<a href="#">Prev Project</a>
+						</li>
+
+						<li>
+							<a href="#">Next Project</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Calendar Popup -->
+	<div class="calendar-popup">
+		<div class="popup-wrapper">
+			<div class="table-wrapper">
+				<h4>Available Appointments:</h4>
+
+				<table>
+					<tbody><tr>
+						<td>
+							<span class="time">8:00 am – 9:00 am</span>
+						</td>
+						<td>
+							4 TIME SLOTS AVAILABLE
+							<a href="#" class="button worker-button-3">Book Appointment</a>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<span class="time">9:00 am – 10:00 am</span>
+						</td>
+						<td>
+							4 TIME SLOTS AVAILABLE
+							<a href="#" class="button worker-button-3">Book Appointment</a>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<span class="time">10:00 am – 11:00 am</span>
+						</td>
+						<td>
+							4 TIME SLOTS AVAILABLE
+							<a href="#" class="button worker-button-3">Book Appointment</a>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<span class="time">11:00 am – 12:00 pm</span>
+						</td>
+						<td>
+							4 TIME SLOTS AVAILABLE
+							<a href="#" class="button worker-button-3">Book Appointment</a>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<span class="time">12:00 pm – 1:00 pm</span>
+						</td>
+						<td>
+							4 TIME SLOTS AVAILABLE
+							<a href="#" class="button worker-button-3">Book Appointment</a>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<span class="time">1:00 pm – 2:00 pm</span>
+						</td>
+						<td>
+							4 TIME SLOTS AVAILABLE
+							<a href="#" class="button worker-button-3">Book Appointment</a>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<span class="time">3:00 pm – 4:00 pm</span>
+						</td>
+						<td>
+							4 TIME SLOTS AVAILABLE
+							<a href="#" class="button worker-button-3">Book Appointment</a>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<span class="time">4:00 pm – 5:00 pm</span>
+						</td>
+						<td>
+							4 TIME SLOTS AVAILABLE
+							<a href="#" class="button worker-button-3">Book Appointment</a>
+						</td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+	</div>
+
+	<!-- Page Wrapper -->
+	<div class="page">
+		<!-- Header -->
+		<header>
+			<div class="container">
+				<div class="row">
+					<!-- Brand -->
+					<div class="col-xs-12 col-md-6">
+						<div class="brand">
+							<a href="http://teslathemes.com/demo/html/worker/index.html"><img src="Worker_files/brand.png" alt="brand"></a>
+						</div>
+					</div>
+
+					<!-- Nav -->
+					<div class="col-xs-12 col-md-18">
+						<nav>
+							<ul>
+								<li>
+									<a href="#intro-section1">Who are we?</a>
+								</li>
+								<li><a href="#our-services">Our Services</a></li>
+								<li><a href="#contact-us">Contact Us</a></li>
+							</ul>
+
+							<i class="responsive-menu-trigger icon-menu"></i>
+							
+							<div class="map-trigger">
+								<!-- <i class="icon icon-map2"></i> -->
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<!-- Map Wrapper -->
+				<div class="map">
+					<div style="position: relative; background-color: rgb(229, 227, 223); overflow: hidden;" class="map-container" id="header-map"><div class="gm-style" style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0; cursor: url(&quot;http://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; position: absolute; left: 472px; top: -176px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 472px; top: 80px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 728px; top: -176px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 728px; top: 80px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 216px; top: -176px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 216px; top: 80px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 984px; top: -176px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 984px; top: 80px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -40px; top: -176px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -40px; top: 80px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1240px; top: -176px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1240px; top: 80px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 472px; top: -176px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 472px; top: 80px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 728px; top: -176px;"><canvas width="256" height="256" style="-moz-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;" draggable="false"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 728px; top: 80px;"><canvas width="256" height="256" style="-moz-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;" draggable="false"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 216px; top: -176px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 216px; top: 80px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 984px; top: -176px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 984px; top: 80px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -40px; top: -176px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -40px; top: 80px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1240px; top: -176px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1240px; top: 80px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="position: absolute; left: 472px; top: -176px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Worker_files/vt_011.png" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div><div style="position: absolute; left: 472px; top: 80px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Worker_files/vt_009.png" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div><div style="position: absolute; left: 728px; top: -176px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Worker_files/vt_006.png" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div><div style="position: absolute; left: 728px; top: 80px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Worker_files/vt_004.png" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div><div style="position: absolute; left: 216px; top: -176px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Worker_files/vt_010.png" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div><div style="position: absolute; left: 216px; top: 80px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Worker_files/vt_007.png" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div><div style="position: absolute; left: 984px; top: -176px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Worker_files/vt_002.png" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div><div style="position: absolute; left: 984px; top: 80px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Worker_files/vt_012.png" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div><div style="position: absolute; left: -40px; top: -176px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Worker_files/vt_003.png" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div><div style="position: absolute; left: -40px; top: 80px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Worker_files/vt_005.png" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div><div style="position: absolute; left: 1240px; top: -176px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Worker_files/vt_008.png" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div><div style="position: absolute; left: 1240px; top: 80px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="Worker_files/vt.png" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 2; width: 100%; height: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 3; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a title="Click to see this area on Google Maps" href="https://maps.google.com/maps?ll=42.583711,-72.008183&amp;z=15&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3" target="_blank" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 66px; height: 26px; cursor: pointer;"><img draggable="false" src="Worker_files/google4.png" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div></a></div><div style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto,Arial,sans-serif; color: rgb(34, 34, 34); box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2); z-index: 10000002; display: none; width: 256px; height: 148px; position: absolute; left: 490px; top: 45px;"><div style="padding: 0px 0px 10px; font-size: 16px;">Map Data</div><div style="font-size: 13px;">Map data ©2015 Google</div><div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img draggable="false" src="Worker_files/mapcnt6.png" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div></div><div style="z-index: 1000001; position: absolute; right: 166px; bottom: 0px; width: 121px;" class="gmnoprint"><div class="gm-style-cc" style="-moz-user-select: none; height: 14px; line-height: 14px;" draggable="false"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Map Data</a><span style="">Map data ©2015 Google</span></div></div></div><div style="position: absolute; right: 0px; bottom: 0px;" class="gmnoscreen"><div style="font-family: Roboto,Arial,sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map data ©2015 Google</div></div><div draggable="false" style="z-index: 1000001; -moz-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 95px; bottom: 0px;" class="gmnoprint gm-style-cc"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_blank" href="https://www.google.com/intl/en-US_US/help/terms_maps.html" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms of Use</a></div></div><div class="gm-style-cc" style="-moz-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;" draggable="false"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/maps/@42.583711,-72.008183,15z/data=%2110m1%211e1%2112b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;" title="Report errors in the road map or imagery to Google" target="_new">Report a map error</a></div></div></div></div>
+					<div class="container">
+						<div class="map-footer">
+							<p>Workerplace 1517. 3th Floor LA Hollywood<br>Phone (+22) 13 45 78987</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Hero Section -->
+		<section class="hero-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-14 col-md-offset-10 col-lg-12 col-lg-offset-12">
+						<h1>Book &amp;<br>appointment</h1>
+						<p>Curabitur fermentum lacus nulla, a mattis arcu rutrum id. Nunc 
+ac feugiat purus, at tempus quam. Aliquam sed turpis commodo, volutpat 
+quam quis, posuere est.</p>
+						<!-- <div class="calendar">
+							<div id="dp1446715403972" class="datepicker hasDatepicker"><div style="display: block;" class="ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a class="ui-datepicker-prev ui-corner-all" data-handler="prev" data-event="click" title="Prev"><span class="ui-icon ui-icon-circle-triangle-w">Prev</span></a><a class="ui-datepicker-next ui-corner-all" data-handler="next" data-event="click" title="Next"><span class="ui-icon ui-icon-circle-triangle-e">Next</span></a><div class="ui-datepicker-title"><span class="ui-datepicker-month">November</span>&nbsp;<span class="ui-datepicker-year">2015</span></div></div><table class="ui-datepicker-calendar"><thead><tr><th scope="col" class="ui-datepicker-week-end"><span title="Sunday">Su</span></th><th scope="col"><span title="Monday">Mo</span></th><th scope="col"><span title="Tuesday">Tu</span></th><th scope="col"><span title="Wednesday">We</span></th><th scope="col"><span title="Thursday">Th</span></th><th scope="col"><span title="Friday">Fr</span></th><th scope="col" class="ui-datepicker-week-end"><span title="Saturday">Sa</span></th></tr></thead><tbody><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">1</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">2</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">3</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">4</a></td><td class=" ui-datepicker-days-cell-over  ui-datepicker-current-day ui-datepicker-today" data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default ui-state-highlight ui-state-active ui-state-hover" href="#">5</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">6</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">7</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">8</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">9</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">10</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">11</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">12</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">13</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">14</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">15</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">16</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">17</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">18</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">19</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">20</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">21</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">22</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">23</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">24</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">25</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">26</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">27</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">28</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">29</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2015"><a class="ui-state-default" href="#">30</a></td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td></tr></tbody></table></div></div>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Intro Section -->
+		<section class="intro-section">
+		    <a name="intro-section1"></a>
+			<div class="bg-wrapper">
+				<div class="container">
+					<!-- Section Header -->
+					<div class="section-header">
+						<img src="Worker_files/logo.png" alt="theme logo">
+						<h1>Who we are &amp; what we are doing</h1>
+						<p>Curabitur fermentum lacus nulla, a mattis arcu rutrum id. Nunc 
+ac feugiat purus, at tempus quam. Aliquam sed turpis commodo, volutpat 
+quam quis, posuere est.</p>
+					</div>
+
+					<!-- Tabs -->
+					<div class="tabs horizontal-tabs ui-tabs ui-widget ui-widget-content ui-corner-all">
+						<!-- Tabs Header -->
+						<div class="heading">
+							<div style="width: 358px; height: 107px;" class="active-tab-indicator"></div>
+
+							<ul role="tablist" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+								<li aria-expanded="true" aria-selected="true" aria-labelledby="ui-id-1" aria-controls="about" tabindex="0" role="tab" class="ui-state-default ui-corner-top ui-tabs-active ui-state-active">
+									<a id="ui-id-1" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#about">
+										<i class="fa fa-smile-o fa-4x"></i>
+										<p class="hidden-xs"><span>About us</span><br>We are the best</p>
+									</a>
+								</li>
+								<li aria-expanded="false" aria-selected="false" aria-labelledby="ui-id-2" aria-controls="strategy" tabindex="-1" role="tab" class="ui-state-default ui-corner-top">
+									<a id="ui-id-2" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#strategy">
+										<i class="fa fa-wrench fa-4x"></i>
+										<p class="hidden-xs"><span>Our style of working</span><br>Strategy</p>
+									</a>
+								</li>
+								<li aria-expanded="false" aria-selected="false" aria-labelledby="ui-id-3" aria-controls="strong-points" tabindex="-1" role="tab" class="ui-state-default ui-corner-top">
+									<a id="ui-id-3" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#strong-points">
+										<i class="fa fa-star fa-4x"></i>
+										<p class="hidden-xs"><span>Our strong points</span><br>Features</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<!-- Tabs Body -->
+						<div class="tabs-body">
+							<div aria-hidden="false" role="tabpanel" aria-labelledby="ui-id-1" class="tab ui-tabs-panel ui-widget-content ui-corner-bottom" id="about">
+								<p>Varius ipsum non sem pellentesque faucibus. Etiam egestas 
+quis arcu quis aliquam. Quisque mattis lacus et sapien varius, porttitor
+ tincidunt odio dignissim. Cras at sagittis massa. Proin ac finibus mi. 
+Duis sed purus vitae sem condimentum ultrices. Maecenas in molestie 
+turpis. Sed hendrerit commodo magna in tristique. Integer fermentum quis
+ dui a sollicitudin. Aliquam gravida massa a molestie sodales. 
+Vestibulum et vulputate augue. Pellentesque in convallis eros, at 
+imperdiet massa. Sed vulputate aliquam nulla, in dignissim magna tempus 
+sit amet.</p>
+							</div>
+
+							<div aria-hidden="true" style="display: none;" role="tabpanel" aria-labelledby="ui-id-2" class="tab ui-tabs-panel ui-widget-content ui-corner-bottom" id="strategy">
+								<p>Varius ipsum non sem pellentesque faucibus. Etiam egestas 
+quis arcu quis aliquam. Quisque mattis lacus et sapien varius, porttitor
+ tincidunt odio dignissim. Cras at sagittis massa. Proin ac finibus mi. 
+Duis sed purus vitae sem condimentum ultrices. Maecenas in molestie 
+turpis. Sed hendrerit commodo magna in tristique. Integer fermentum quis
+ dui a sollicitudin. Aliquam gravida massa a molestie sodales. 
+Vestibulum et vulputate augue. Pellentesque in convallis eros, at 
+imperdiet massa. Sed vulputate aliquam nulla, in dignissim magna tempus 
+sit amet.</p>
+							</div>
+
+							<div aria-hidden="true" style="display: none;" role="tabpanel" aria-labelledby="ui-id-3" class="tab ui-tabs-panel ui-widget-content ui-corner-bottom" id="strong-points">
+								<p>Varius ipsum non sem pellentesque faucibus. Etiam egestas 
+quis arcu quis aliquam. Quisque mattis lacus et sapien varius, porttitor
+ tincidunt odio dignissim. Cras at sagittis massa. Proin ac finibus mi. 
+Duis sed purus vitae sem condimentum ultrices. Maecenas in molestie 
+turpis. Sed hendrerit commodo magna in tristique. Integer fermentum quis
+ dui a sollicitudin. Aliquam gravida massa a molestie sodales. 
+Vestibulum et vulputate augue. Pellentesque in convallis eros, at 
+imperdiet massa. Sed vulputate aliquam nulla, in dignissim magna tempus 
+sit amet.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Features - Why choose us -->
+					<div class="section-header small">
+						<h1>Why choose us</h1>
+						<p>Read and make your choice</p>
+					</div>
+
+					<!-- Features Wrapper -->
+					<div class="features">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="feature">
+									<i class="icon fa fa-check"></i>
+									<h4>Aliquam lacinia nulla</h4>
+									<p>Curabitur fermentum lacus nulla, a mattis arcu rutrum id. Nunc ac feugiat purus, at tempus quam. Aliquam sed</p>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="feature">
+									<i class="icon fa fa-check"></i>
+									<h4>Aliquam lacinia nulla</h4>
+									<p>Curabitur fermentum lacus nulla, a mattis arcu rutrum id. Nunc ac feugiat purus, at tempus quam. Aliquam sed</p>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="feature">
+									<i class="icon fa fa-check"></i>
+									<h4>Aliquam lacinia nulla</h4>
+									<p>Curabitur fermentum lacus nulla, a mattis arcu rutrum id. Nunc ac feugiat purus, at tempus quam. Aliquam sed</p>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="feature">
+									<i class="icon fa fa-check"></i>
+									<h4>Aliquam lacinia nulla</h4>
+									<p>Curabitur fermentum lacus nulla, a mattis arcu rutrum id. Nunc ac feugiat purus, at tempus quam. Aliquam sed</p>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="feature">
+									<i class="icon fa fa-check"></i>
+									<h4>Aliquam lacinia nulla</h4>
+									<p>Curabitur fermentum lacus nulla, a mattis arcu rutrum id. Nunc ac feugiat purus, at tempus quam. Aliquam sed</p>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="feature">
+									<i class="icon fa fa-check"></i>
+									<h4>Aliquam lacinia nulla</h4>
+									<p>Curabitur fermentum lacus nulla, a mattis arcu rutrum id. Nunc ac feugiat purus, at tempus quam. Aliquam sed</p>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="feature">
+									<i class="icon fa fa-check"></i>
+									<h4>Aliquam lacinia nulla</h4>
+									<p>Curabitur fermentum lacus nulla, a mattis arcu rutrum id. Nunc ac feugiat purus, at tempus quam. Aliquam sed</p>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="feature">
+									<i class="icon fa fa-check"></i>
+									<h4>Aliquam lacinia nulla</h4>
+									<p>Curabitur fermentum lacus nulla, a mattis arcu rutrum id. Nunc ac feugiat purus, at tempus quam. Aliquam sed</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Call to action Section -->
+		<!-- <section class="call-to-action-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-14 col-lg-15">
+						<h1>Like our work description? Start booking!</h1>
+					</div>
+
+					<div class="col-md-10 col-lg-9">
+						<div class="buttons">
+							<a href="#" class="button worker-button-1">View services</a>
+							<a href="#" class="button worker-button-1">Start booking</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+
+		<!-- Order Services -->
+		<section class="order-services-section">
+			<!--  -->
+
+			<!-- Simple Contact Form Section -->
+			<div class="container">
+				<!-- Section Header -->
+				<div class="section-header inverted less-padding">
+					<h1>Have a question?</h1>
+					<p>Curabitur fermentum lacus nulla, a mattis arcu rutrum id. Nunc 
+ac feugiat purus, at tempus quam. Aliquam sed turpis commodo, volutpat 
+quam quis, posuere est.</p>
+				</div>
+
+				<!-- Subscribe Form -->
+				<form class="simple-contact-form">
+					<input class="input-line" placeholder="Enter your name" type="text">
+					<input class="input-line" placeholder="Enter your email" type="text">
+					<input class="input-line" placeholder="Your question" type="text">
+					<input class="submit-btn" value="ask" type="submit">
+				</form>
+			</div>
+		</section>
+
+		<!-- Works Section -->
+		<!--  -->
+
+		<!-- Main Services Section -->
+		<section class="main-services-section">
+		    <a name="our-services"></a>
+			<div class="container">
+				<!-- Section Header -->
+				<div class="section-header inverted">
+					<h1>Services</h1>
+					<p>Curabitur fermentum lacus nulla, a mattis arcu rutrum id. Nunc 
+ac feugiat purus, at tempus quam. Aliquam sed turpis commodo, volutpat 
+quam quis, posuere est.</p>
+				</div>
+
+				<!-- Services Wrapper -->
+				<div class="main-services-wrapper">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="main-service">
+								<a href="#" class="icon-wrapper">
+									<i class="icon icon-home39"></i>
+								</a>
+
+								<h3>Duis at gravida orci</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at gravida orci, quis hendrerit mauris. Duis nibh ipsum, pulvinar</p>
+							</div>
+						</div>
+
+						<div class="col-md-12">
+							<div class="main-service">
+								<a href="#" class="icon-wrapper">
+									<i class="icon icon-credit11"></i>
+								</a>
+
+								<h3>Duis at gravida orci</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at gravida orci, quis hendrerit mauris. Duis nibh ipsum, pulvinar</p>
+							</div>
+						</div>
+
+						<div class="col-md-12">
+							<div class="main-service">
+								<a href="#" class="icon-wrapper">
+									<i class="icon icon-calligraphy"></i>
+								</a>
+
+								<h3>Duis at gravida orci</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at gravida orci, quis hendrerit mauris. Duis nibh ipsum, pulvinar</p>
+							</div>
+						</div>
+
+						<div class="col-md-12">
+							<div class="main-service">
+								<a href="#" class="icon-wrapper">
+									<i class="icon icon-heart39"></i>
+								</a>
+
+								<h3>Duis at gravida orci</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at gravida orci, quis hendrerit mauris. Duis nibh ipsum, pulvinar</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Blog Section -->
+		
+
+		<!-- Testimonial Section -->
+		<section class="testimonial-section">
+			<div class="container">
+				<!-- Section Header -->
+				<div class="section-header inverted">
+					<h1>Testimonials</h1>
+					<p>Curabitur fermentum lacus nulla, a mattis arcu rutrum id.</p>
+				</div>
+
+				<!-- Testimonials -->
+				<div style="opacity: 1; display: block;" class="testimonials-list owl-carousel owl-theme">
+					<div class="owl-wrapper-outer"><div style="width: 5280px; left: 0px; display: block;" class="owl-wrapper"><div style="width: 880px;" class="owl-item"><div class="testimonial">
+						<p class="message">"Lorem ipsum dolor sit amet, consectetur 
+adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+minim."</p>
+
+						<div class="user">
+							<div class="avatar">
+								<img src="Worker_files/user-avatar-1.jpg" alt="user avatar">
+							</div>
+
+							<p class="user-name">John Doe</p>
+							<p class="title">Manager</p>
+						</div>
+					</div></div><div style="width: 880px;" class="owl-item"><div class="testimonial">
+						<p class="message">"Lorem ipsum dolor sit amet, consectetur 
+adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+minim."</p>
+
+						<div class="user">
+							<div class="avatar">
+								<img src="Worker_files/user-avatar-1.jpg" alt="user avatar">
+							</div>
+
+							<p class="user-name">John Doe</p>
+							<p class="title">Manager</p>
+						</div>
+					</div></div><div style="width: 880px;" class="owl-item"><div class="testimonial">
+						<p class="message">"Lorem ipsum dolor sit amet, consectetur 
+adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+minim."</p>
+
+						<div class="user">
+							<div class="avatar">
+								<img src="Worker_files/user-avatar-1.jpg" alt="user avatar">
+							</div>
+
+							<p class="user-name">John Doe</p>
+							<p class="title">Manager</p>
+						</div>
+					</div></div></div></div>
+
+					
+
+					
+				<div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div><div class="owl-buttons"><div class="owl-prev"><i class="fa fa-arrow-left"></i></div><div class="owl-next"><i class="fa fa-arrow-right"></i></div></div></div></div>
+			</div>
+		</section>
+
+		<!-- Simple Theme Section -->
+		
+
+		<!-- Pricing Tables Section -->
+
+		<!-- Skills Section -->
+		<section class="skills-section">
+			<div class="container">
+				<!-- Section Header -->
+				<div class="section-header inverted">
+					<h1>Skills</h1>
+					<p>Curabitur fermentum lacus nulla, a mattis arcu rutrum id. Nunc 
+ac feugiat purus, at tempus quam. Aliquam sed turpis commodo, volutpat 
+quam quis, posuere est.</p>
+				</div>
+
+				<!-- Section Body -->
+				<div class="skills-wrapper">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="text-skill">
+								<i class="icon fa fa-bell-o"></i>
+								<h4>Lorem ipsum dolor sit amet, consectetur</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at gravida orci, quis hendrerit maur</p>
+							</div>
+
+							<div class="text-skill">
+								<i class="icon icon-cup2"></i>
+								<h4>Lorem ipsum dolor sit amet, consectetur</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at gravida orci, quis hendrerit maur</p>
+							</div>
+
+							<div class="text-skill">
+								<i class="icon icon-flag2"></i>
+								<h4>Lorem ipsum dolor sit amet, consectetur</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at gravida orci, quis hendrerit maur</p>
+							</div>
+						</div>
+
+						<div class="col-sm-12">
+							<div class="progress-bar-skill">
+								<p class="caption">Quisque in lacus</p>
+								<div data-progress="85" class="progress-bar-wrapper">
+									<div class="actual-progress"></div>
+									<span>1</span>
+								</div>
+							</div>
+
+							<div class="progress-bar-skill">
+								<p class="caption">Proin condimentum</p>
+								<div data-progress="44" class="progress-bar-wrapper">
+									<div class="actual-progress"></div>
+									<span>1</span>
+								</div>
+							</div>
+
+							<div class="progress-bar-skill">
+								<p class="caption">Ut elementum feugiat</p>
+								<div data-progress="90" class="progress-bar-wrapper">
+									<div class="actual-progress"></div>
+									<span>1</span>
+								</div>
+							</div>
+
+							<div class="progress-bar-skill">
+								<p class="caption">Suspendisse vel magna</p>
+								<div data-progress="30" class="progress-bar-wrapper">
+									<div class="actual-progress"></div>
+									<span>1</span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Call to action section -->
+		
+
+		<!-- Newsletter subscribe Section  -->
+		<section class="newsletter-subscribe-section">
+			<div class="container">
+				<form class="subscribe-form">
+					<input class="input-line js-input" placeholder="Newsletter subscribe" type="email">
+					<input class="submit" type="submit">
+				</form>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer>
+			<!-- Upper Block -->
+			<a name="contact-us"></a>
+
+			<!-- Main Block -->
+			<div class="footer-widgets">
+				<div class="container">
+					<div class="row">
+						<!-- Info Section -->
+						<div class="col-md-10">
+							<div class="footer-widget info no-border">
+								<img src="Worker_files/brand.png" alt="worker brand">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Etiam enim urna, blandit quis fringilla sit amet, sodales in odiofinibus
+ smod</p>
+
+								<p class="address">Workerplace 1517. 3th Floor LA Hollywood<br>Phone (+22) 13 45 78987</p>
+							</div>
+						</div>
+
+						<!-- Polular Services Section -->
+						<div class="col-md-6 col-md-offset-1">
+							<div class="footer-widget services">
+								<h3 class="section-caption">Most popular services</h3>
+
+								<ul class="services">
+									<li><p><a href="#">Sed in turpis vel sem ullamcorper</a></p></li>
+									<li><p><a href="#">Donec in elementum risus</a></p></li>
+									<li><p><a href="#">Curabitur aliquet ut odio et vehicula</a></p></li>
+									<li><p><a href="#">Sed in turpis vel sem ullamcorper</a></p></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-md-offset-1">
+							<div class="footer-widget services">
+								<h3 class="section-caption">Contact Us</h3>
+
+								
+							</div>
+						</div>
+
+						<!-- Tags Section -->
+						
+					</div>
+				</div>
+			</div>
+
+			<!-- Copyrights -->
+			<div class="copyrights">
+				<div class="container">
+					<p>Copyright 2015. Designed by <a href="http://www.teslathemes.com/">TeslaThemes</a></p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Scripts -->
+	<script src="Worker_files/js.js"></script>
+	<script src="Worker_files/jquery.js"></script>
+	<script src="Worker_files/modernizr.js"></script>
+	<script src="Worker_files/smooth-scroll.js"></script>
+	<script src="Worker_files/jquery-ui.js"></script>
+	<script src="Worker_files/imagesloaded.js"></script>
+	<script src="Worker_files/lightbox.js"></script><div style="display: none;" id="lightboxOverlay" class="lightboxOverlay"></div><div style="display: none;" id="lightbox" class="lightbox"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><div class="lb-nav"><a class="lb-prev" href=""></a><a class="lb-next" href=""></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div>
+	<script src="Worker_files/isotope.js"></script>
+	<script src="Worker_files/bootstrap.js"></script>
+	<script src="Worker_files/owl-carousel.js"></script>
+	<script src="Worker_files/visible.js"></script>
+	<script src="Worker_files/knob.js"></script>
+	<script src="Worker_files/options.js"></script>
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body></html>
